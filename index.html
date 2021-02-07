@@ -1,94 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS30</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
-        rel="stylesheet">
-    <style>
-        h1 {
-            font-family: 'Noto Sans JP', sans-serif;
-            font-weight: 300;
-            font-size: 3rem;
-            margin: auto;
-            width: 50%;
-        }
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-        body {
-            background-color: #fdffbc;
-        }
-
-        section {
-            /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            margin: 1rem;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-        }
-
-        section>img {
-            max-width: 40rem;
-            max-height: 35rem;
-        }
-
-        /* On mouse-over, add a deeper shadow */
-        section:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        /* Add some padding inside the card container */
-        .container {
-            padding: 2px 16px;
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>JavaScript 30 Challenge</h1>
+      <h1>JavaScript 30 Challenge</h1>
     </header>
     <main>
-        <article>
-            <section>
-                <a target="_blank" href="./01 - JavaScript Drum Kit/index-START.html">Day 1: JavaScript Drum Kit</a>
-            </section>
-            <section>
-                <a target="_blank" href="./02 - JS and CSS Clock/index-START.html">Day 2: Web Clock</a>
-            </section>
-            <section>
-                <a target="_blank" href="./03 - CSS Variables/index-START.html">Day 3: CSS Variables with JS</a>
-            </section>
-            <section>
-                <a target="_blank" href="./04 - Array Cardio Day 1/index-START.html">Day 4: Array Cardio Day 1</a>
-            </section>
-            <section>
-                <a target="_blank" href="./05 - Flex Panel Gallery/index-START.html">Day 5: Gallery with Flex</a>
-            </section>
-            <section>
-                <a target="_blank" href="./06 - Type Ahead/index-START.html">Day 6: Type Ahead</a>
-            </section>
-            <section>
-                <a target="_blank" href="./07 - Array Cardio Day 2/index-START.html">Day 7: Array Cardio Day 2</a>
-            </section>
-            <section>
-                <a target="_blank" href="./08 - Fun with HTML5 Canvas/index-START.html">Day 8: Fun with Canvas</a>
-            </section>
-            <section>
-                <a target="_blank" href="./09 - Dev Tools Domination/index-START.html">Day 9: Dev O Dev</a>
-            </section>
-            <section>
-                <a target="_blank" href="./10 - Hold Shift and Check Checkboxes/index-START.html">Day 10: Destroying
-                    Chec</a>
-            </section>
-        </article>
-
+      <article>
+        <project-card
+          name="Day 1: JavaScript Drum Kit"
+          url="./01 - JavaScript Drum Kit/index.html"
+          desc="Key Board Events & Event Listener exercises"
+        ></project-card>
+        <project-card
+          name="Day 2: Web Clock"
+          url="./02 - JS and CSS Clock/index.html"
+          desc="Understand CSS transform properties with JS Date object, Document querySelector"
+        ></project-card>
+        <project-card
+          name="Day 3: CSS Variables with JS"
+          url="./03 - CSS Variables/index.html"
+          desc="CSS Variables and it's manipulation using JS"
+        ></project-card>
+        <project-card
+          name="Day 4: Array Cardio Day"
+          url="./04 - Array Cardio Day 1/index.html"
+          desc="Array Function Excercies - Part 1"
+        ></project-card>
+        <project-card
+          name="Day 5: Gallery with Flex"
+          url="./05 - Flex Panel Gallery/index.html"
+          desc="Understand CSS transform properties with JS Date object, Document querySelector"
+        ></project-card>
+        <project-card
+          name="Day 6: Type Ahead"
+          url="./06 - Type Ahead/index.html"
+          desc="Understand CSS transform properties with JS Date object, Document querySelector"
+        ></project-card>
+        <project-card
+          name="Day 7: Array Cardio Day 2"
+          url="./07 - Array Cardio Day 2/index.html"
+          desc="Understand CSS transform properties with JS Date object, Document querySelector"
+        ></project-card>
+      </article>
     </main>
     <footer></footer>
-</body>
-
+  </body>
+  <script src="Card.js"></script>
 </html>
